@@ -34,6 +34,7 @@
         self.answersLabel.backgroundColor = RGBCOLOR(159, 66, 69);
     }
     else {
+        
         self.answersLabel.backgroundColor = RGBCOLOR(0, 154, 103);
     }
     self.answersLabel.text = [NSString stringWithFormat:@"%@ answer", info[@"answersWord"]];

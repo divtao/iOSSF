@@ -147,10 +147,13 @@
     [self initSlideNavigator];
 
     [self.window addSubview:self.navigator.view];
-
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
+    SFQuestionListViewController * rootVc = [[SFQuestionListViewController alloc] init];
+    self.window.rootViewController = rootVc;
+    
     return YES;
 }
 
